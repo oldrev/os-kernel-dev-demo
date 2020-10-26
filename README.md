@@ -9,9 +9,9 @@ $ gcc -T default.lds  main.c init.c -o demo
 $ ./demo
 ```
 
-To use it in your own STM32 project, add the following to your linker script (`*.ld/*.lds`):
+To test it in your own STM32 project, **do not** use the `default.lds` file that included in this repository, instead you may add the following to your STM32 linker script (`*.ld/*.lds`):
 
-```ld
+```lds
   ._init :
   {
     PROVIDE_HIDDEN (__init_begin = .);
