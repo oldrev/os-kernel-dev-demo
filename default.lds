@@ -165,7 +165,8 @@ SECTIONS
   ._init :
   {
     PROVIDE_HIDDEN (__init_begin = .);
-    KEEP (*(._init))
+    KEEP (*(SORT(._init.*)))
+    KEEP (*(._init*))
     PROVIDE_HIDDEN (__init_end = .);
   }
 
