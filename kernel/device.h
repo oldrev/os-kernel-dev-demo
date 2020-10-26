@@ -25,4 +25,4 @@ typedef struct
 
 size_t device_get_all_static(const Device **devices);
 
-const Device *device_find_static(const char *name)
+const Device *device_find_static(const char *name);
