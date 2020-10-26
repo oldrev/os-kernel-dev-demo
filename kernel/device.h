@@ -24,3 +24,5 @@ typedef struct
     INIT_ENTRY_DEFINE(__DEVICE_MAKE_NAME(dev_name_), init_, &__DEVICE_MAKE_NAME(dev_name_));
 
 size_t device_get_all_static(const Device **devices);
+
+const Device *device_find_static(const char *name)
